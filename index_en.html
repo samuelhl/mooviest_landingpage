@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height">
+    <meta name="description" content="Movie recommendation system">
+    <meta name="author" content="Mooviest">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#940123">
+	<meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#940123">
+
+    <title>Mooviest</title>
+
+	<!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">	
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+	<!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/7c5129d645.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<i class="fa fa-bars"></i>
+      		</button>
+          <a class="navbar-brand" href="#">M</a>
+        </div>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i> Language<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="index_en.html">English</a></li>
+					<li><a href="index.html">Español</a></li>
+				</ul>
+        	</li>
+    	</ul>
+		</div>
+      </div>
+    </div>
+
+	<!-- *****************************************************************************************************************
+	 HEADERWRAP
+	 ***************************************************************************************************************** -->
+	<div class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="assets/img/carousel/Audrey_Hepburn.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Braveheart.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Bruno_Zanin.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Carmen_Miranda.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Chaplin.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Charlton_Heston.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Clock.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Fritz_Lang.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Herman.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Lion.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Mark_Hamill.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Michael_Bay.jpg">
+			</div>
+			<div class="item">
+				<img src="assets/img/carousel/Sound.jpg">
+			</div>
+		</div>
+	</div>
+	
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row header">
+				<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 centered">
+					<h1 id="logo">Mooviest</h1>		
+					<h3 id="slogan">Your next movie</h3>
+				</div>
+			</div><!--/row -->
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="row">
+				<h4>Private beta launch (estimated):</h4>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="clock"></div>
+			</div>
+	    </div><!-- /container -->
+	</div><!-- /headerwrap -->
+
+	<!-- *****************************************************************************************************************
+	 SERVICE LOGOS
+	 ***************************************************************************************************************** -->
+	 <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+ 				<div class="col-lg-4 col-md-4">
+ 					<i class="fa fa-check"></i>
+ 					<h4>Super fast checklist</h4>
+ 					<p>Quickly check movies as seen, not seen, favourite or watchlist by swiping the movie poster in the corresponding direction. (Aprox. 50 movies/min.)</p>
+ 				</div>
+ 				<div class="col-lg-4 col-md-4">
+ 					<i class="fa fa-smile-o"></i>
+ 					<h4>Emotional movies</h4>
+ 					<p>Tell us what you thought about a certain movie and how it made you feel with simple tags similar to the ones you already know and love from Facebook.</p>
+ 				</div>
+ 				<div class="col-lg-4 col-md-4">
+ 					<i class="fa fa-thumbs-up"></i>
+ 					<h4>Quality recomendations</h4>
+ 					<p>Now that we know what kind of movies you've seen and how they make you feel, we can offer quality recommendations based on all of this information so you know what movie to watch next.</p>
+ 				</div>
+	 		</div>
+	 	</div><!--/container -->
+	 </div><!--/service -->
+	 
+	<!-- *****************************************************************************************************************
+	 API
+	 ****************************************************************************************************************** -->
+	 <div id="cwrap">
+		 <div class="container">
+			<div class="row centered">
+				<div class="col-lg-6 col-lg-offset-3">
+					<img src="assets/img/api_graph.png">
+					<br>
+					<br>
+					<br>
+					<p>Our movie recommendation system will be published as a freemium API, so that everyone can include our awesome recommendations into their sites and apps.</p>
+					<p>Feel free to try it out when we launch or sign up to our newsletter below for a chance to try out or private beta.</p>
+				</div>
+		 	</div>
+		 </div>
+	 </div>
+	 
+	 
+	<!-- *****************************************************************************************************************
+	 TEAM SECTION
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mtb">
+	 	<div class="row centered">
+	 		<h3>TEAM</h3>
+			<div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-6" id="team">
+				<img src="assets/img/team/jose.jpg" alt="" class="img-responsive img-circle">
+				<h4>José A. Palacios Ramírez</h4>
+				<p>CEO</p>				
+				<p>
+					<a href="https://www.linkedin.com/in/joseantpalacios"><i class="fa fa-lg fa-linkedin"></i></a>
+					<a href="https://plus.google.com/+JoséAntonioPalaciosRamírez04"><i class="fa fa-lg fa-google-plus"></i></a>
+					<a href="mailto:jose@mooviest.com"><i class="fa fa-lg fa-envelope"></i></a>
+				</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" id="team">
+				<img src="assets/img/team/samuel.png" alt="" class="img-responsive img-circle">
+				<h4>Samuel Hindley López</h4>
+				<p>CTO</p>				
+				<p>
+					<a href="https://es.linkedin.com/in/samhindley"><i class="fa fa-lg fa-linkedin"></i></a>
+					<a href="https://www.google.com/+SamuelHindleyLópez"><i class="fa fa-lg fa-google-plus"></i></a>
+					<a href="mailto:samuel@mooviest.com"><i class="fa fa-lg fa-envelope"></i></a>
+				</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" id="team">
+				<img src="assets/img/team/cristina.jpeg" alt="" class="img-responsive img-circle">
+				<h4>Cristina Jaime Segura</h4>
+				<p>CDO</p>				
+				<p>
+					<a href="https://es.linkedin.com/in/cristinajaimesegura"><i class="fa fa-lg fa-linkedin"></i></a>
+					<a href="https://plus.google.com/u/0/+CristinaJaimeSegura"><i class="fa fa-lg fa-google-plus"></i></a>
+					<a href="mailto:cristina@mooviest.com"><i class="fa fa-lg fa-envelope"></i></a>
+				</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" id="team">
+				<img src="assets/img/team/jesus.jpg" alt="" class="img-responsive img-circle">
+				<h4>Jesús D. Rivera Rubio</h4>
+				<p>Board Advisor</p>				
+				<p>
+					<a href="https://www.linkedin.com/in/jsdario/es"><i class="fa fa-lg fa-linkedin"></i></a>
+					<a href="https://plus.google.com/117604894955369467694"><i class="fa fa-lg fa-google-plus"></i></a>
+					<a href="mailto:jesus@mooviest.com"><i class="fa fa-lg fa-envelope"></i></a>
+				</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" id="team">
+				<img src="assets/img/team/adri.jpg" alt="" class="img-responsive img-circle">
+				<h4>Adrián Melgares Bonilla</h4>
+				<p>CMO</p>
+				<p>
+					<a href="www.linkedin.com/in/adrián-melgares-bonilla"><i class="fa fa-lg fa-linkedin"></i></a>
+					<a href="https://plus.google.com/+AdriánMelgaresBonilla"><i class="fa fa-lg fa-google-plus"></i></a>
+					<a href="mailto:adrian@mooviest.com"><i class="fa fa-lg fa-envelope"></i></a>
+				</p>
+			</div>
+	 	</div><!--/row -->
+	 </div><!--/container -->
+	 
+	<!-- *****************************************************************************************************************
+	 COUNTDOWN
+	 ***************************************************************************************************************** -->
+	 <div id="twrap">
+	 	<div class="container centered">
+	 		<div class="row">
+	 			<div class="col-lg-8 col-lg-offset-2">
+	 			<p></p>
+	 			</div>
+	 		</div><!--/row -->
+	 	</div><!--/container -->
+	 </div><!--/twrap -->
+
+	 <!-- *****************************************************************************************************************
+	 NEWSLETTER
+	 ***************************************************************************************************************** -->
+	 <div id="newsletter">
+	 	<div class="container">
+ 			<div class="row centered">
+ 				<h3>NEWSLETTER</h3>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<p>Sign up to our newsletter to stay up to date on Mooviest's latest news and a chance to access our private beta when we launch.</p>
+					<br>
+					<div class="row">
+						<form class="form-inline form-group-lg" role="form" action="https://lb.benchmarkemail.com//code/lbform" method="post" name="frmLB647335" accept-charset="UTF-8" onsubmit="return _checkSubmit647335(this);">
+							<input type="hidden" name="successurl" value="http://www.benchmarkemail.com/Code/ThankYouOptin?language=spanish" />
+							<input type="hidden" name="errorurl" value="http://lb.benchmarkemail.com//Code/Error" />
+							<input type="hidden" name="token" value="mFcQnoBFKMTUyIInpVQKTuZXUawFafLCLHoQiT5uZYOXTESBLBYPhQ%3D%3D" />
+							<div class="form-group">
+								<div class="col-lg-12 col-md-12">
+									<input type="email" class="form-control" id="email" name="fldEmail" placeholder="Enter your email address">
+								</div>
+							</div>
+							<button type="submit" class="btn btn-lg btn-success">Subscribe</button>
+						</form>
+					</div>
+				</div>
+	 		</div>
+	 	</div><!--/container -->
+	 </div><!--/newsletter -->
+	 
+	<!-- *****************************************************************************************************************
+	 SUPPORTED BY
+	 ***************************************************************************************************************** -->
+	 <div id="cwrap">
+		 <div class="container">
+		 	<div class="row centered">
+			 	<h3>SUPPORTED BY</h3>
+			 	<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+			 		<img src="assets/img/tetuanvalley.png" class="img-responsive" style="margin-top: 20px">
+			 	</div>
+		 	</div><!--/row -->
+		 </div><!--/container -->
+	 </div><!--/cwrap -->
+
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	 <div id="footerwrap">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-lg-4">
+		 			<h4>About</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+						 With Mooviest you can easily check the movies you've seen with a simple swipe gesture. These movies you've seen and favourite actors combined with your context
+						 and everyday mood will allow Mooviest to provide you with much better recommendations.
+					 </p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Links</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				<a href="http://facebook.com/mooviest" target="_blank"><i class="fa fa-facebook"></i></a>
+		 				<a href="http://twitter.com/mooviest" target="_blank"><i class="fa fa-twitter"></i></a>
+		 				<a href="https://plus.google.com/110852632495504689943" target="_blank"><i class="fa fa-google-plus"></i></a>
+						<a href="https://instagram.com/mooviest" target="_blank"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/company/mooviest" target="_blank"><i class="fa fa-linkedin"></i></a>
+		 			</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Our Bunker</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				C/ Rioja, 25<br/>
+		 				Torre del Mar, 29740<br/>
+						Málaga</br>
+						Spain</br>
+		 			</p>
+		 		</div>
+		 	
+		 	</div><!--/row -->
+	 	</div><!--/container -->
+	 </div><!--/footerwrap -->
+	 
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="assets/js/jquery.hoverdir.js"></script>
+	<script src="assets/js/jquery.hoverex.min.js"></script>
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<script src="assets/js/benchmark.js"></script>
+	<script src="assets/js/analytics.js"></script>
+	<script>
+		$('#clock').countdown('2016/08/15', function(event) {
+			var $this = $(this).html(event.strftime(''
+			+ '<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 col-xs-3"><h1>%D</h1><h4>days</h4></div>'
+			+ '<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><h1>%H</h1><h4>hours</h4></div>'
+			+ '<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><h1>%M</h1><h4>minutes</h4></div>'
+			+ '<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3"><h1>%S</h1><h4>seconds</h4></div>'));
+		});
+	</script>
+
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyDMgpl0XWsHGBn7ayzffP96kcSkiEejLF8",
+			authDomain: "mooviest-ded17.firebaseapp.com",
+			databaseURL: "https://mooviest-ded17.firebaseio.com",
+			storageBucket: "",
+		};
+		firebase.initializeApp(config);
+	</script>
+
+  </body>
+</html>
