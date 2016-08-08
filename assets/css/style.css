@@ -28,10 +28,15 @@ h1 {
 	z-index: 1;
 }
 
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+	height: 100%;
+	width: 100%;
+}
+
 .carousel.slide {
-	margin-top: 70px;
 	position: absolute;
 	z-index: -1;
+	height: 65rem;
 }
 
 .carousel, .item, .active{
@@ -304,7 +309,8 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	min-height: 700px;
+	margin-top: 70px;
+	height: 65rem;
 	padding-top: 50px;
 	padding-bottom: 0px;
 	text-align: center;
