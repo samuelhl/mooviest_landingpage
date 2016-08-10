@@ -357,8 +357,9 @@ a:focus {
 
 /* Newsletter wrap */
 #newsletter {
-	margin-top: 50px;
-	margin-bottom: 80px;
+	background-color: #f7f7f7;
+	padding-top: 50px;
+	padding-bottom: 80px;
 }
 
 #newsletter h3 {
